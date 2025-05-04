@@ -94,7 +94,7 @@ const Login = () => {
             </form>
           </CardContent>
           <CardFooter className="flex justify-center text-xs text-muted-foreground">
-            <span>For demo purposes: bogdan@alphacoin.com / Alphaowner</span>
+            {/* Demo credentials text removed */}
           </CardFooter>
         </Card>
       </div>
