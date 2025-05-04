@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -24,6 +25,21 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				alphaBlue: {
+					DEFAULT: '#142d84',
+					light: '#2b54cf',
+					dark: '#0a1845',
+				},
+				alphaPurple: {
+					DEFAULT: '#8B5CF6',
+					light: '#A78BFA',
+					dark: '#7C3AED',
+				},
+				alphaGold: {
+					DEFAULT: '#F59E0B',
+					light: '#FBBF24',
+					dark: '#D97706',
+				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -84,11 +100,22 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'price-pulse': {
+					'0%, 100%': { 
+						opacity: '1',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						opacity: '0.85',
+						transform: 'scale(1.01)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'price-pulse': 'price-pulse 2s ease-in-out infinite'
 			}
 		}
 	},
